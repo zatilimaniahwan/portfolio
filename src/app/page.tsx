@@ -7,10 +7,19 @@ import { useRef } from "react";
 export default function Home() {
   const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
 
+  /**
+   * Sets the section reference for the given id.
+   * @param id - The id of the section to set the reference for.
+   * @returns A function that takes an element and sets the reference for the given id.
+   */
   const setSectionRef = (id: string) => (element: any) => {
     if (element) sectionRefs.current[id] = element;
   };
 
+  /**
+   * Scrolls the element associated with the given id into view with a smooth animation.
+   * @param id - The id of the element to scroll into view.
+   */
   const scrollIntoView = (id: string) => {
     if (sectionRefs.current[id])
       sectionRefs.current[id]!.scrollIntoView({ behavior: "smooth" });
