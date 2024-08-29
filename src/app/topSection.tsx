@@ -27,7 +27,7 @@ export const TopSection = () => {
               <div className="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start">
                 <div className="flex items-center justify-center pl-0 sm:justify-start md:pl-1">
                   <p className="font-body text-lg uppercase text-white">
-                    Let's connect
+                    {` Let's connect`}
                   </p>
                   <div className="hidden sm:block">
                     <i className="bx bx-chevron-right text-3xl text-yellow"></i>

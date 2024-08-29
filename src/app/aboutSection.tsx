@@ -21,7 +21,7 @@ export const AboutSection = ({ setSectionRef }: AboutSectionProps) => {
             Who am I?
           </h2>
           <h4 className="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-            I'm Christy Smith, a Web Designer & Photographer
+            {`I am Christy Smith, a Web Designer & Photographer`}
           </h4>
           <p className="pt-6 font-body leading-relaxed text-black">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
